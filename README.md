@@ -48,7 +48,7 @@ Have in mind the current sets of keys and your current security level.
 
     # Protected keys
     [
-        phone
+        btc_address
     ]
 
 ```
