@@ -1,9 +1,4 @@
-import os
 from setuptools import setup
-
-# Utility function to read the README file.
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
     name = "staffy",
@@ -15,7 +10,7 @@ setup(
     keywords = "api wrapper",
     url = "https://github.com/fat-whale/staffy",
     packages=['staffy'],
-    long_description=read('README'),
+    long_description="Read the readme :D",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
