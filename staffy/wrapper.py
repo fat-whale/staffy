@@ -4,9 +4,10 @@ import json
 
 
 class Wrapper(object):
-    def __init__(self, ip, port):
+    def __init__(self, ip, port, key):
         self.url = "http://{}:{}/".format(ip, port)
-    
+        self.key = key
+
     def check_request_helper(self, r):
         if r.status_code != 200:
             return False
@@ -18,7 +19,7 @@ class Wrapper(object):
         return False
 
     def args_helper(self, kwargs):
-        args = {}
+        args = {"key":self.key}
         if kwargs:
             for key, value in kwargs.items():
                 args[key] = value
