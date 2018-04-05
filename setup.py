@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = "staffy",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Urbano Gutierrez",
     author_email = "urbano@fatwhale.io",
     description = ("A simple wrapper for our internal staff API."),
